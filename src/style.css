@@ -85,7 +85,7 @@ h3{
 }
 .delantera .grupo .numero,
 .delantera .grupo .nombre,
-.delantera .grupo .expiración{
+.delantera .grupo .expiracion{
     color: #fff;
     font-size: 22px;
     text-transform: uppercase;
@@ -156,7 +156,7 @@ h3{
     width: 50px;
     height: 50px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 20px;  
     background: #2364d2;
     color: #fff;
     position: relative;
@@ -168,7 +168,6 @@ h3{
     transition: all .2s ease;
     border: none;
     cursor: pointer;
-    display: none;
 }
 .contenedor-btn .btn-abrir-formulario:hover{
     background: #1850b1;
