@@ -173,7 +173,7 @@ h3{
     background: #1850b1;
 }
 .contenedor-btn .btn-abrir-formulario.active{
-    transform: rotate(45deg);
+    transform: rotate(360deg);
 }
  .formulario-tarjeta{
     background: #fff;
