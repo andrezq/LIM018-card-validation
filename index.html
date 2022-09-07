@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1> Seguros:"Destino en tus manos" </h1>
+    <img src="https://www.turboseguros.com/wp-content/uploads/2017/11/seguros-personales-turboseguros.jpg" alt="imagen de familia">
+    <h2>Compra el mejor seguro y a un buen precio con nuestras promociones de lanzamiento</h2>
+    
+    <h3>Elige entre nuestros mejores planes</h3>
+    <div class="btn" id="btn1">
+      Paquete de duo antirriesgos: S/150 al mes. Este paquete asegura al titular y una persona más. 
+    </div>
+    <div class="btn" id="btn2">
+      Paquete familiar: S/300 al mes. Este paquete asegura al titular y 3 personas más.
+    </div>
+    <div class="btn" id="btn3">
+      Car Pack Familiar: S/500 al mes. Este paquete asegura al titular, 3 acompañantes más y el auto que registren.
+    </div>
+    <div class="btn" id="btn4">
+      Car and me: S/275 al mes. Este paquete asegura al titular y su automovil.
+    </div>
+    <h3>Estás a un paso de tener a ti y a toda tu familia más segura. Solo necesitamos tus datos para poder activar el seguro que escogiste</h3>
+    <div class="contenedor"> 
+      <section class="tarjeta" id="tarjeta" >
+        <div class="delantera">
+          <div class="logo-marca">
+            <img src="img/visa.png" alt="">
+          </div>
+          <img src="img/chip-tarjeta.png" class="chip" alt=""> 
+          <div class="datos">
+            <div class="grupo" id="numero" EventListener="InscripcionNumero">
+              <p class="label">Número Tarjeta</p>
+              <p class="numero">#### #### #### ####</p>
+            </div>
+            <div class="flexbox">
+              <div class="grupo" id="nombre">
+                <p class="label">Nombre de Trajeta</p>
+                <p class="nombre">Axel Sifuentes</p>
+              </div>
+
+              <div class="grupo" id="expiracion">
+                <p class="label">Expiracion</p>
+                <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trasera">
+          <div class="barra-magnetica"></div>
+          <div class="datos">
+            <div class="grupo" id="firma">
+              <p class="label">Firma</p>
+              <div class="firma"><p></p></div>
+            </div>
+            <div class="grupo" id="ccv">
+              <p class="label">CCV</p>
+              <p class="ccv"></p>
+            </div>
+          </div>
+          <p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur optio adipisci unde ipsam odit suscipit molestias. Rerum illo, optio accusantium ea nobis quas inventore beatae, exercitationem facilis maiores dicta?</p>
+          <a href="#" class="link-banco">www.bank.com.pe</a>
+        </div>
+      </section>
+
+      <div class="contenedor-btn">
+        <button class="btn-abrir-formulario" id="btn-abrir-formulario" >
+          Abrir
+        </button>
+      </div>
+
+      <form id="formulario-tarjeta" class="formulario-tarjeta">
+        <div class="grupo">
+          <label for="inputNumero">Número Tarjeta</label>
+          <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+        </div>
+        <div class="grupo">
+          <label for="inputNombre">Nombre</label>
+          <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+        </div>
+        <div class="flexbox">
+          <div class="grupoexpira">
+            <label for="selectMes">Expiracion</label>
+            <div class="flexbox">
+              <div class="grupo-select">
+                <select name="mes" id="selectMes">
+                  <option disabled selected>Mes</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+               <div class="grupo-select">
+                <select name="year" id="selectYear">
+                  <option disabled selected>Año</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                  <option value="2030">2030</option>
+                </select>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="grupoccv">
+            <label for="inputCCV">CCV</label> 
+            <input type="text" id="inputCCV" maxlength="3">
+          </div>
+        <button class="submit" class="btn-enviar" onsubmit="Corroboracion()">Enviar</button>
+      </form>
+    </div>
+    
+
+
+    <script src="./index.js"></script>
+    <script src="./jkjk.js"></script>
+    <script src="./validator.js"></script>
+  </body>
+</html>
