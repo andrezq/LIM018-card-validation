@@ -49,12 +49,12 @@ formulario.selectMes.addEventListener('change', (e) => {
 })
 
 formulario.selectYear.addEventListener('change', (e) => {
-  yearExpiracion.textContent = e.target.value.slice (2) ;
+  yearExpiracion.textContent = e.target.value.slice(2);
   mostrarFrente();
 });
 
 formulario.inputCCV.addEventListener('keyup', () => {
-  if(!tarjeta.contains('active')){
+  if(!tarjeta.classList.contains('active')){
 tarjeta.classList.toggle('active');
   }
 
